@@ -1,0 +1,109 @@
+:root {
+  --first_color: #2f5060;
+  --p_color: #223e57;
+  --a_color: #17719e;
+  --font: "Noto Kufi Arabic", sans-serif;
+}
+*,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--font);
+}
+body {
+  direction: rtl;
+  overflow-x: hidden;
+  caret-color: var(--first_color);
+  background-color: #f7f7f7;
+  height: 100vh;
+}
+body::-webkit-scrollbar,
+.mainbg::-webkit-scrollbar {
+  background-color: transparent;
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb,
+.mainbg::-webkit-scrollbar-thumb {
+  background: var(--first_color);
+  border-radius: 30px;
+}
+main {
+  width: 55%;
+  border-top: 10px solid var(--first_color);
+  background-color: #fefffa;
+  text-align: center;
+  padding: 30px;
+}
+@media (max-width: 992px) {
+  main {
+    width: 100%;
+    height: 100vh;
+  }
+}
+h1 {
+  text-transform: uppercase;
+  font-size: 46px;
+  font-weight: bold;
+  color: var(--first_color);
+}
+p {
+  font-size: 23px;
+  color: var(--p_color);
+}
+input:not([type="radio"]),
+select,
+textarea {
+  width: 55%;
+  height: 65px;
+  border: none;
+  background-color: #f5f2f2;
+  color: var(--first_color);
+  font-weight: bold;
+  text-align: center;
+}
+input::placeholder {
+  color: var(--first_color);
+}
+textarea {
+  height: auto;
+  padding-top: 15px;
+}
+div {
+  margin: 20px 0;
+}
+label {
+  color: rgba(48, 69, 92, 0.8);
+  margin-right: 15px;
+  font-weight: bold;
+}
+.original-button {
+  text-decoration: none;
+  color: var(--first_color);
+  font-size: 18px;
+  border-radius: 0px;
+  display: inline-block;
+  width: 40%;
+  line-height: 45px;
+  height: 50px;
+  font-weight: bold;
+  border: 2px solid var(--first_color);
+  transition: 0.5s;
+  box-shadow: 5px 5px 0px 0px #26485a;
+  background-color: #fff;
+}
+
+.original-button:hover {
+  box-shadow: 0 0 var(--first_color);
+  color: #fff;
+  background-color: var(--first_color);
+}
+a {
+  text-decoration: none;
+  color: var(--a_color);
+  font-weight: bold;
+  transition: color 0.5s ease-in-out;
+}
+a:hover {
+  color: #125476;
+}

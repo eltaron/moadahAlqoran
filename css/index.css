@@ -1,0 +1,61 @@
+:root {
+  --first_color: #2f5060;
+  --p_color: #223e57;
+  --font: "Noto Kufi Arabic", sans-serif;
+}
+*,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--font);
+}
+body {
+  direction: rtl;
+  overflow-x: hidden;
+  caret-color: var(--first_color);
+}
+body::-webkit-scrollbar,
+.mainbg::-webkit-scrollbar {
+  background-color: transparent;
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb,
+.mainbg::-webkit-scrollbar-thumb {
+  background: var(--first_color);
+  border-radius: 30px;
+}
+
+body {
+  background-image: url("../images/bg.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-color: #f7f7f7;
+}
+p {
+  font-size: 23px;
+  color: var(--p_color);
+  font-weight: bold;
+}
+.original-button {
+  text-decoration: none;
+  color: var(--first_color);
+  font-size: 18px;
+  border-radius: 0px;
+  display: inline-block;
+  width: 50%;
+  line-height: 45px;
+  height: 50px;
+  font-weight: bold;
+  border: 2px solid var(--first_color);
+  transition: 0.5s;
+  box-shadow: 5px 5px 0px 0px #26485a;
+  background-color: #f7f7f7;
+}
+
+.original-button:hover {
+  box-shadow: 0 0 var(--first_color);
+  color: #f7f7f7;
+  background-color: var(--first_color);
+}
