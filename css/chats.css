@@ -104,6 +104,9 @@ body {
   align-items: center;
   margin: 15px 0;
 }
+audio {
+  width: 26vh;
+}
 .two {
   direction: rtl;
 }
