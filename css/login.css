@@ -63,7 +63,8 @@ textarea {
   text-align: center;
 }
 
-input::placeholder {
+input::placeholder,
+textarea::placeholder {
   color: var(--first_color);
 }
 textarea {

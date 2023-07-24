@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>مودة القرآن</title>
+    <meta name="theme-color" content="#fcc464" />
+    <meta name="msapplication-navbutton-color" content="#2f5060" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#2f5060" />
+    <meta
+      name="description"
+      content=" موقع مختص في تسهيل حفظ القرآن الكريم والحديث الشريف "
+    />
+    <meta name="author" content="Ahmed Eltaroun ( Master code )" />
+    <meta name="MobileOptimized" content="320" />
+    <meta property="og:title" content="الرئيسية" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://moadahAlqoran.com" />
+    <meta property="og:image" content="" />
+    <meta
+      property="og:description"
+      content=" موقع مختص في تسهيل حفظ القرآن الكريم والحديث الشريف"
+    />
+    <meta property="og:site_name" content="moadahAlqoran" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/png" href="images/quran.png" />
+    <!-- css files -->
+    <link rel="stylesheet" href="assets/bootstrab/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"
+            ><img src="images/logo.png" alt="" width="200"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a aria-current="page" href="#">الرئيسية</a>
+              </li>
+              <li class="nav-item">
+                <a class="active" href="categories.html">الاقسام</a>
+              </li>
+              <li class="nav-item">
+                <a class="" href="users.html">جميع الطلبة</a>
+              </li>
+              <li class="nav-item">
+                <a class="" href="lessons.html">جميع الواجبات</a>
+              </li>
+              <li class="nav-item numbered">
+                <a class="" href="lastchats.html">اخر التسليمات</a>
+                <span>5</span>
+              </li>
+              <li class="nav-item">
+                <a class="" href="login.html">تسجيل الخروج</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="mainbg">
+        <div>
+          <div class="text-center">
+            <h2>جميع الاقسام</h2>
+            <button
+              type="button"
+              class="btn btn-outline-light btn-lg"
+              data-bs-toggle="modal"
+              data-bs-target="#addnew"
+            >
+              اضافة قسم
+            </button>
+          </div>
+        </div>
+      </section>
+      <section id="main">
+        <div class="container pt-5 pb-5">
+          <table
+            id="example"
+            class="table table-striped text-center"
+            style="width: 100%"
+          >
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>اسم القسم</th>
+                <th>وصف القسم</th>
+                <th>العمليات</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>مجموعة 1</td>
+                <td>مجموعة 1</td>
+                <td>
+                  <a
+                    href="users.html"
+                    type="button"
+                    class="btn btn-primary mb-2"
+                    >طلبة القسم</a
+                  >
+                  <a
+                    href="lessons.html"
+                    type="button"
+                    class="btn btn-primary mb-2"
+                    >واجبات القسم</a
+                  >
+                  <button
+                    type="button"
+                    class="btn btn-success mb-2"
+                    data-bs-toggle="modal"
+                    data-bs-target="#edit"
+                  >
+                    تعديل القسم
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-danger mb-2"
+                    data-bs-toggle="modal"
+                    data-bs-target="#remove"
+                  >
+                    حذف القسم
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>مجموعة 2</td>
+                <td>مجموعة 2</td>
+                <td>
+                  <a
+                    href="users.html"
+                    type="button"
+                    class="btn btn-primary mb-2"
+                    >طلبة القسم</a
+                  >
+                  <a
+                    href="lessons.html"
+                    type="button"
+                    class="btn btn-primary mb-2"
+                    >واجبات القسم</a
+                  >
+                  <button
+                    type="button"
+                    class="btn btn-success mb-2"
+                    data-bs-toggle="modal"
+                    data-bs-target="#edit"
+                  >
+                    تعديل القسم
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-danger mb-2"
+                    data-bs-toggle="modal"
+                    data-bs-target="#remove"
+                  >
+                    حذف القسم
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>مجموعة 3</td>
+                <td>مجموعة 3</td>
+                <td>
+                  <a
+                    href="users.html"
+                    type="button"
+                    class="btn btn-primary mb-2"
+                    >طلبة القسم</a
+                  >
+                  <a
+                    href="lessons.html"
+                    type="button"
+                    class="btn btn-primary mb-2"
+                    >واجبات القسم</a
+                  >
+                  <button
+                    type="button"
+                    class="btn btn-success mb-2"
+                    data-bs-toggle="modal"
+                    data-bs-target="#edit"
+                  >
+                    تعديل القسم
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-danger mb-2"
+                    data-bs-toggle="modal"
+                    data-bs-target="#remove"
+                  >
+                    حذف القسم
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>مجموعة 4</td>
+                <td>مجموعة 4</td>
+                <td>
+                  <a
+                    href="users.html"
+                    type="button"
+                    class="btn btn-primary mb-2"
+                    >طلبة القسم</a
+                  >
+                  <a
+                    href="lessons.html"
+                    type="button"
+                    class="btn btn-primary mb-2"
+                    >واجبات القسم</a
+                  >
+                  <button
+                    type="button"
+                    class="btn btn-success mb-2"
+                    data-bs-toggle="modal"
+                    data-bs-target="#edit"
+                  >
+                    تعديل القسم
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-danger mb-2"
+                    data-bs-toggle="modal"
+                    data-bs-target="#remove"
+                  >
+                    حذف القسم
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <div class="container">
+        <div class="copyright" dir="ltr">
+          © Copyright <strong><a href="">MasterCode</a></strong
+          >. All Rights Reserved
+        </div>
+      </div>
+    </footer>
+    <!-- models -->
+    <div
+      class="modal fade"
+      id="addnew"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">اضافة قسم</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <input type="text" placeholder="اسم القسم" />
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="وصف القسم"
+              ></textarea>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              اغلاق
+            </button>
+            <button type="button" class="btn btn-primary">اضافة</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="edit"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">تعديل قسم</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <input type="text" placeholder="اسم القسم" />
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="وصف القسم"
+              ></textarea>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              اغلاق
+            </button>
+            <button type="button" class="btn btn-success">تعديل</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="remove"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">حذف قسم</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-center">
+            <form action="">
+              <h3>هل حقا تريد حذف القسم ؟</h3>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              اغلاق
+            </button>
+            <button type="button" class="btn btn-danger">حذف</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="assets/bootstrab/bootstrap.bundle.min.js"></script>
+    <script src="assets/datetable/jquery-3.7.0.js"></script>
+    <script src="assets/datetable/jquery.dataTables.min.js"></script>
+    <script src="assets/datetable/dataTables.bootstrap5.min.js"></script>
+    <script>
+      var table = new DataTable("#example");
+    </script>
+  </body>
+</html>
